@@ -1,17 +1,17 @@
 {
-  "name": " ",
+  "name": "project-find-me",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
-    "start": "npm run build; webpack-dev-server --open --mode development",
+    "start": "npm run build & webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js",
     "test": "jest",
     "debug": "node --inspect node_modules/.bin/jest --runInBand"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mariel Hamson, Jason Khan, Sara Kane, Chris Yoon, Brittany Lindgren",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",

@@ -1,18 +1,18 @@
-# Title
+# Project Me Finder
 
-####  project for Epicodus, 07.xx.2020
+####  A Team Week practice in collaboration for Epicodus, 07.06.2020
 
-## By 
+## By Mariel Hamson, Jason Khan, Sara Kane, Chris Yoon & Brittany Lindgren
 
 ## Description
 
-Elevator Pitch
+ADD DESCRIPTION
 
 ## Setup/Installation Requirements
 
 | Steps | Example |
 | -------- | ----- |
-| Follow this [link to the project repository](LINK HERE) on GitHub.   |  [Link to the project repository](LINK HERE)  |    
+| Follow this [link to the project repository](https://github.com/MarielHamson/Project-Me-Finder.git) on GitHub.   |  [Link to the project repository](https://github.com/MarielHamson/Project-Me-Finder.git)  |    
 | Click on the "Clone or download" button to copy the project link.   |   ![Image of GitHub Clone or download button](assets/images/readme/clone-download-button.PNG)   |   
 | If you are comfortable with the command line, you can copy the project link and clone it through your command line with the command `git clone` + project link. Otherwise, I recommend choosing "**Download ZIP**".   |   ![Download ZIP option on GitHub](assets/images/readme/download-zip.PNG)  |   
 |  Once the ZIP file has finished downloading, you can right click on the file to view the zip folder in your downloads.   |   ![ZIP folder in downloads](assets/images/readme/zip-folder.PNG)  |   
@@ -38,8 +38,8 @@ Elevator Pitch
 #### Get a unique API Key
 | Steps | Example |
 | -------- | ----- |
-| To get an API key for the currency exchange website, go to the [Link Text](LINK) website.  | ![Go to the exchangerate-api.com site](assets/images/readme/IMAGE-TITLE.PNG) |
-|  Enter your email and click on the 'Get Free Key' button  |  ![Get Free Key button](assets/images/readme/get-free-key.PNG)  |
+| To get an API key for the Project Me Finder website, go to the [Link Text](LINK) website.  | ![Go to the LINK HERE site](assets/images/readme/IMAGE-TITLE.PNG) |
+|  Enter your email and click on the 'Get Free Key' button  |  ![Get Free Key button](assets/images/readme/IMAGE-TITLE.PNG)  |
 |  Enter your information to sign up for a free account  |  ![Sign up for a free account](assets/images/readme/IMAGE-TITLE.PNG)  |
 |  Your API key will be provided to you once you have signed in  |  ![Page with your API key and information](assets/images/readme/IMAGE-TITLE.PNG)   |
 |  Your API key is unique to you. DO NOT SHARE YOUR KEY. Below are the instructions for _`Add .env file`_ which will walk you through setting up a .env file. You will store your key inside of that file to keep it private.  |  see _`Add .env file`_ below  |  
