@@ -1,4 +1,20 @@
+export class favoriteList {
+  
+  constructor() {
+    this.favorites = [];
+  }
+
+  addFavoriteMovie(response) {
+    this.favorites.push(response.results[0].title);
+  }
+}
+
 export class MovieFinderService {
+
+  constructor() {
+    this.tag = [];
+  }
+
   async searchMovie(searchQuery) {
     return fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&query=${searchQuery}&language=en-US`)
       .then(function(response) {

@@ -56,3 +56,14 @@ $(document).ready(function(){
     this.counter --;
   }
 }
+
+
+function displayMovieResults(response) {
+  for 
+  srch.results.known_for
+}
+
+for (let i = 0; srch.results[0].known_for.length > i; i++) {
+  $(.btn).html(` class="card-img-top"Movie Title 1</button>`)
+  srch.results[0].known_for[i].title
+}
