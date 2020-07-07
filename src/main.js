@@ -9,7 +9,9 @@ function displayMovieResults(response) {
   if(response.results.length > 5) {
     for (let i = 0; i < 5; i++) {
       $("#title"+i).text(response.results[i].title);
-      $("#result"+i+" .image").html(`<img src=https://image.tmdb.org/t/p/w500${response.results[i].poster_path} >`);
+      if (response.results[i].poster_path){
+        $("#result"+i+" .image").html(`<img src=https://image.tmdb.org/t/p/w500${response.results[i].poster_path} >`)
+      } 
       $(".result"+i+"-summary").html(`Release date: ${response.results[i].release_date}<br>`);
       $(".result"+i+"-summary").html(response.results[i].overview);
       $("#result"+i).show();
@@ -18,7 +20,9 @@ function displayMovieResults(response) {
   } else {
     for (let i = 0; i < response.results.length; i++){
       $("#title"+i).text(response.results[i].title);
-      $("#result"+i+" .image").html(`<img src=https://image.tmdb.org/t/p/w500${response.results[i].poster_path} >`);
+      if (response.results[i].poster_path){
+        $("#result"+i+" .image").html(`<img src=https://image.tmdb.org/t/p/w500${response.results[i].poster_path} >`)
+      } 
       $(".result"+i+"-summary").html(`Release date: ${response.results[i].release_date}<br>`);
       $(".result"+i+"-summary").html(response.results[i].overview);
       $("#result"+i).show();
