@@ -8,61 +8,184 @@
 </head>
 <body>
   <div class="container">
+    <div class="results">
     <!--ACCORDIAN WRAPPER-->
-    <div class="accordion" id="result0">
-      <!--CARD ONE-->
-      <div class="card">
-        <!--header-->
-        <div class="card-header" id="headingOne">
-          <h2 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              <img src="./../assets/images/placeholder.jpg" alt="card image cap - a placeholder for the movie" class="card-img-top">
-              Movie Title 1
-            </button>
-          </h2>
-        </div>
-        <!--body - connects to head id with aria-labelledby value -->
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#result0">
-          <div class="card-body">
-            <div class="result0-summary">
-              A summary of the movie goes here along with any other movie info we would like to insert. This will depend on what is available through our API call. 
+      <div class="accordion" id="result0">
+        <!--CARD ONE-->
+        <div class="card">
+          <!--header-->
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <div class="image">
+                </div>
+                <h2 id="title0"></h2>
+              </button>
+            </h2>
+          </div>
+          <!--body - connects to head id with aria-labelledby value -->
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#result0">
+            <div class="card-body">
+              <div class="result0-summary"> 
+              </div>
+              <div class="tags">
+                <h5>Do you want to add a tag?</h5>
+                <div id="tag-form0">
+                  <select name="tagselect" id="tagoption0" class="form-group">
+                    <option value="tag1">a</option>
+                    <option value="tag2">b</option>
+                    <option value="tag3">c</option>
+                    <option value="tag4">d</option>
+                  </select>
+                  <button class="btn btn-success">Add Tag</button>
+                </div> <!--end of tag form-->
+              </div> <!--end of tag div-->
             </div>
-            <div class="tags">
-              <h5>Do you want to add a tag?</h5>
-              <div id="tag-form0">
-                <select name="tagselect" id="tagoption0" class="form-group">
-                  <option value="tag1">a</option>
-                  <option value="tag2">b</option>
-                  <option value="tag3">c</option>
-                  <option value="tag4">d</option>
-                </select>
-                <button class="btn btn-success">Add Tag</button>
-              </div> <!--end of tag form-->
-            </div> <!--end of tag div-->
+          </div>
+        </div>
+      </div> <!-- end div for accordian --> 
+
+    <div class="accordion" id="result1">
+        <!--CARD TWO-->
+        <div class="card">
+          <!--header-->
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <!--differences: add class collapsed, aria-expanded is false-->
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <div class="image">
+                </div>
+                <h2 id="title1"></h2>
+              </button>
+            </h2>
+          </div>
+          <!--body-->
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#result1">
+            <div class="card-body">
+              <div class="result1-summary"> 
+              </div>
+              <div class="tags">
+                <h5>Do you want to add a tag?</h5>
+                <div id="tag-form1">
+                  <select name="tagselect" id="tagoption1" class="form-group">
+                    <option value="tag1">a</option>
+                    <option value="tag2">b</option>
+                    <option value="tag3">c</option>
+                    <option value="tag4">d</option>
+                  </select>
+                  <button class="btn btn-success">Add Tag</button>
+                </div> <!--end of tag form-->
+              </div> <!--end of tag div-->
+            </div>
           </div>
         </div>
       </div>
-    </div> <!-- end div for accordian --> 
-<div class="accordion" id="result1">
-      <!--CARD TWO-->
-      <div class="card">
-        <!--header-->
-        <div class="card-header" id="headingTwo">
-          <h2 class="mb-0">
-            <!--differences: add class collapsed, aria-expanded is false-->
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-              Movie Title 2
-            </button>
-          </h2>
-        </div>
-        <!--body-->
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#result1">
-          <div class="card-body">
-            Lorem ipsum dolor sit amet.
+      <div class="accordion" id="result2">
+        <!--CARD TWO-->
+        <div class="card">
+          <!--header-->
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <!--differences: add class collapsed, aria-expanded is false-->
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                <div class="image">
+                </div>
+                <h2 id="title2"></h2>
+              </button>
+            </h2>
+          </div>
+          <!--body-->
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#result2">
+            <div class="card-body">
+              <div class="result2-summary"> 
+              </div>
+              <div class="tags">
+                <h5>Do you want to add a tag?</h5>
+                <div id="tag-form2">
+                  <select name="tagselect" id="tagoption2" class="form-group">
+                    <option value="tag1">a</option>
+                    <option value="tag2">b</option>
+                    <option value="tag3">c</option>
+                    <option value="tag4">d</option>
+                  </select>
+                  <button class="btn btn-success">Add Tag</button>
+                </div> <!--end of tag form-->
+              </div> <!--end of tag div-->
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <div class="accordion" id="result3">
+        <!--CARD TWO-->
+        <div class="card">
+          <!--header-->
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <!--differences: add class collapsed, aria-expanded is false-->
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                <div class="image">
+                </div>
+                <h2 id="title3"></h2>
+              </button>
+            </h2>
+          </div>
+          <!--body-->
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#result3">
+            <div class="card-body">
+              <div class="result3-summary"> 
+              </div>
+              <div class="tags">
+                <h5>Do you want to add a tag?</h5>
+                <div id="tag-form3">
+                  <select name="tagselect" id="tagoption3" class="form-group">
+                    <option value="tag1">a</option>
+                    <option value="tag2">b</option>
+                    <option value="tag3">c</option>
+                    <option value="tag4">d</option>
+                  </select>
+                  <button class="btn btn-success">Add Tag</button>
+                </div> <!--end of tag form-->
+              </div> <!--end of tag div-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion" id="result4">
+        <!--CARD TWO-->
+        <div class="card">
+          <!--header-->
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <!--differences: add class collapsed, aria-expanded is false-->
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                <div class="image">
+                </div>
+                <h2 id="title4"></h2>
+              </button>
+            </h2>
+          </div>
+          <!--body-->
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#result4">
+            <div class="card-body">
+              <div class="result4-summary"> 
+              </div>
+              <div class="tags">
+                <h5>Do you want to add a tag?</h5>
+                <div id="tag-form4">
+                  <select name="tagselect" id="tagoption4" class="form-group">
+                    <option value="tag1">a</option>
+                    <option value="tag2">b</option>
+                    <option value="tag3">c</option>
+                    <option value="tag4">d</option>
+                  </select>
+                  <button class="btn btn-success">Add Tag</button>
+                </div> <!--end of tag form-->
+              </div> <!--end of tag div-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!--end div for results-->
   </div> <!-- end div for container -->
 </body>
 </html>
