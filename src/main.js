@@ -4,13 +4,26 @@ import './styles.css';
 import $ from 'jquery';
 import { MovieFinderService } from './movieFinderService';
 
+function createCard(info) {
+  //title
+  //release_date
+  //overview
+  //poster_path
+}
+
+function displayResults(response) {
+  if(response.results.length > 5) {
+    for (let i = 0; i < 5; i++) {
+
+    }
+  }
+}
+
 $(document).ready(function(){
   let srch = new MovieFinderService();
 
   (async() => {
-    const response = await srch.searchGenre("action");
-    const response2 = await srch.searchMovieId(706510);
-    console.log(response);
-    console.log(response2);
+    const response = await srch.searchMovie("Avengers");
+    displayResults(response);
   })();
 });
