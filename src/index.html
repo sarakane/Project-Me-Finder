@@ -7,8 +7,26 @@
   <title>Project Me Finder</title>
 </head>
 <body>
-  <div class="container">
-    <div class="results">
+  <h1> Project Find Me</h1>
+  <div class="container-fluid">
+    <div class="row row-cols-3">
+      <div class="col-sm">
+        <div class="search-forms">
+        <form id="movie-search-form">
+          <label for="movie-search">Movie Title:</label>
+          <input id="movie-search" type="text" required>
+          <button id="movie-button" type="submit">Submit</button>
+        </form>
+        <br>
+        <form id="people-search-form">
+          <label for="people-search">Actor/Director: </label>
+          <input id="people-search" type="text" required>
+          <button id="people-button" type="submit">Submit</button>
+        </form>
+      </div>
+  </div><!--end of column-->
+  <div class="col-sm">
+  <div class="results">
     <!--ACCORDIAN WRAPPER-->
       <div class="accordion" id="result0">
         <!--CARD ONE-->
@@ -229,7 +247,10 @@
           </div>
         </div>
       </div>
-    </div> <!--end div for results-->
+    </div>  <!--end of results -->
+    </div><!--end of col tag-->
+    <div class="col-sm" id=tags></div>
+    </div> <!--end row for results-->
   </div> <!-- end div for container -->
 </body>
 </html>

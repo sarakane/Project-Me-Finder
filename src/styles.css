@@ -1,7 +1,15 @@
-.card {
-  width: 18rem;
+#result0, #result1, #result2, #result3, #result4 {
+  display:none;
+}
+
+.search-forms {
   display: grid;
-  margin: 10px;
+  width: 18rem;
+  margin:5px;
+}
+
+.card {
+  display: grid;
 }
 
 /* Card class is already labeled with display grid. Will just need to add more property:values to specify that we want them to form columns and to auto update columns depending on screen size - see css grid documentation  */
