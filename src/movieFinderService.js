@@ -1,18 +1,12 @@
-export class favoriteList {
-  
-  constructor() {
-    this.favorites = [];
-  }
-
-  addFavoriteMovie(response) {
-    this.favorites.push(response.results[0].title);
-  }
-}
-
 export class MovieFinderService {
 
   constructor() {
     this.tag = [];
+    this.favorites = [];
+  }
+
+  addFavoriteMovie(srch) {
+    this.favorites.push(srch.results[0].title);
   }
 
   async searchMovie(searchQuery) {

@@ -52,13 +52,45 @@ function displayPeopleResults(response) {
 
 $(document).ready(function(){
   let srch = new MovieFinderService();
+  let response;
+
+    $("#add-to-list0").click(function(event) {
+      event.preventDefault();
+      let listTitle0 = document.getElementById("title0").innerHTML;
+      $(".testOutput").append(` ${listTitle0} <br>`);
+    });
+
+    $("#add-to-list1").click(function(event) {
+      event.preventDefault();
+      let listTitle1 = document.getElementById("title1").innerHTML;
+      $(".testOutput").append(` ${listTitle1} <br>`);
+    });
+
+    $("#add-to-list2").click(function(event) {
+      event.preventDefault();
+      let listTitle2 = document.getElementById("title2").innerHTML;
+      $(".testOutput").append(` ${listTitle2} <br>`);
+    });
+
+    $("#add-to-list3").click(function(event) {
+      event.preventDefault();
+      let listTitle3 = document.getElementById("title3").innerHTML;
+      $(".testOutput").append(` ${listTitle3} <br>`);
+    });
+
+    $("#add-to-list4").click(function(event) {
+      event.preventDefault();
+      let listTitle4 = document.getElementById("title4").innerHTML;
+      $(".testOutput").append(` ${listTitle4} <br>`);
+    });
+
   $("#movie-search-form").submit(function (event) {
     event.preventDefault();
     let title = $("#movie-search").val();
     $("#movie-search").val("");
 
     (async() => {
-      const response = await srch.searchMovie(title);
+      response = await srch.searchMovie(title);
       displayMovieResults(response);
     })();
   });
@@ -75,31 +107,8 @@ $(document).ready(function(){
   });
 });
 
-
-$("#add-to-list0").click(function(event) {
-  event.preventDefault();
-  console.log();
-
-});
-$("#add-to-list1").click(function() {
-    
-});
-$("#add-to-list2").click(function() {
-    
-});
-$("#add-to-list3").click(function() {
-    
-});
-$("#add-to-list4").click(function() {
-    
-});
-
-
-
-
 $("#button0").click(function(event) {
   event.preventDefault();
-
   $("input:checkbox[name=id-tags0]:checked").each(function() {
     const checkedtags = $(this).val();
     $(".result0-summary").append(`<br>${checkedtags} `);
