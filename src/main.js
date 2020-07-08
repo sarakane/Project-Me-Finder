@@ -58,35 +58,35 @@ $(document).ready(function(){
   let srch = new MovieFinderService();
   let response;
 
-  $("#add-to-list0").click(function(event) {
-    event.preventDefault();
-    let listTitle0 = document.getElementById("title0").innerHTML;
-    $(".testOutput").append(` ${listTitle0} <br>`);
-  });
+    $("#add-to-list0").click(function(event) {
+      event.preventDefault();
+      let listTitle0 = document.getElementById("title0").innerHTML;
+      $(".displayFavorite").append(`<li>${listTitle0}</li>`);
+    });
 
-  $("#add-to-list1").click(function(event) {
-    event.preventDefault();
-    let listTitle1 = document.getElementById("title1").innerHTML;
-    $(".testOutput").append(` ${listTitle1} <br>`);
-  });
+    $("#add-to-list1").click(function(event) {
+      event.preventDefault();
+      let listTitle1 = document.getElementById("title1").innerHTML;
+      $(".displayFavorite").append(`<li>${listTitle1}<li>`);
+    });
 
-  $("#add-to-list2").click(function(event) {
-    event.preventDefault();
-    let listTitle2 = document.getElementById("title2").innerHTML;
-    $(".testOutput").append(` ${listTitle2} <br>`);
-  });
+    $("#add-to-list2").click(function(event) {
+      event.preventDefault();
+      let listTitle2 = document.getElementById("title2").innerHTML;
+      $(".displayFavorite").append(`<li>${listTitle2}<li>`);
+    });
 
-  $("#add-to-list3").click(function(event) {
-    event.preventDefault();
-    let listTitle3 = document.getElementById("title3").innerHTML;
-    $(".testOutput").append(` ${listTitle3} <br>`);
-  });
+    $("#add-to-list3").click(function(event) {
+      event.preventDefault();
+      let listTitle3 = document.getElementById("title3").innerHTML;
+      $(".displayFavorite").append(`<li>${listTitle3}<li>`);
+    });
 
-  $("#add-to-list4").click(function(event) {
-    event.preventDefault();
-    let listTitle4 = document.getElementById("title4").innerHTML;
-    $(".testOutput").append(` ${listTitle4} <br>`);
-  });
+    $("#add-to-list4").click(function(event) {
+      event.preventDefault();
+      let listTitle4 = document.getElementById("title4").innerHTML;
+      $(".displayFavorite").append(`<li>${listTitle4}<li>`);
+    });
 
   $("#movie-search-form").submit(function (event) {
     event.preventDefault();
@@ -117,7 +117,7 @@ $("#button0").click(function(event) {
   event.preventDefault();
   $("input:checkbox[name=id-tags0]:checked").each(function() {
     const checkedtags = $(this).val();
-    $("#display-tag0").append(`<br>${checkedtags} `);
+    $("#display-tag0").text(`<br>${checkedtags} `);
   });
 });
     
@@ -125,7 +125,7 @@ $("#button1").click(function(event) {
   event.preventDefault();
   $("input:checkbox[name=id-tags1]:checked").each(function() {
     const checkedtags = $(this).val();
-    $("#display-tag1").append(`<br>${checkedtags} `);
+    $("#display-tag1").text(`<br>${checkedtags} `);
   });
 });
 
@@ -133,7 +133,7 @@ $("#button2").click(function(event) {
   event.preventDefault();
   $("input:checkbox[name=id-tags2]:checked").each(function() {
     const checkedtags = $(this).val();
-    $("#display-tag2").append(`<br>${checkedtags} `);
+    $("#display-tag2").text(`<br>${checkedtags} `);
   });
 });
 
@@ -141,7 +141,7 @@ $("#button3").click(function(event) {
   event.preventDefault();
   $("input:checkbox[name=id-tags3]:checked").each(function() {
     const checkedtags = $(this).val();
-    $("#display-tag3").append(`<br>${checkedtags} `);
+    $("#display-tag3").text(`<br>${checkedtags} `);
   });
 });
 
@@ -149,7 +149,7 @@ $("#button4").click(function(event) {
   event.preventDefault();
   $("input:checkbox[name=id-tags4]:checked").each(function() {
     const checkedtags = $(this).val();
-    $("#display-tag4").append(`<br>${checkedtags} `);
+    $("#display-tag4").text(`<br>${checkedtags} `);
   });
 });
 
