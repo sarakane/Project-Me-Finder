@@ -28,7 +28,7 @@ $(document).ready(function(){
   let srch = new MovieFinderService();
   
   (async() => {
-    const response = await srch.searchMovie("Avengers");
+    const response = await srch.searchMovie();
     displayResults(response);
 
   })();
@@ -55,14 +55,17 @@ $(document).ready(function(){
 
 
 
-  $("#button0").click(function() {
+  $("#button0").click(function(event) {
+    event.preventDefault();
+
     $("input:checkbox[name=id-tags0]:checked").each(function() {
       const checkedtags = $(this).val();
       $("#result0-summary").append(checkedtags);
     });
   });
     
-  $("#button1").click(function() {
+  $("#button1").click(function(event) {
+    event.preventDefault();
     $("input:checkbox[name=id-tags1]:checked").each(function() {
       const checkedtags = $(this).val();
       $("#result0-summary").append(checkedtags);
@@ -70,21 +73,24 @@ $(document).ready(function(){
     });
   });
 
-  $("#button2").click(function() {
+  $("#button2").click(function(event) {
+    event.preventDefault();
     $("input:checkbox[name=id-tags2]:checked").each(function() {
       const checkedtags = $(this).val();
       $("#result0-summary").append(checkedtags);
     });
   });
 
-  $("#button3").click(function() {
+  $("#button3").click(function(event) {
+    event.preventDefault();
     $("input:checkbox[name=id-tags3]:checked").each(function() {
       const checkedtags = $(this).val();
       $("#result0-summary").append(checkedtags);
     });
   });
 
-  $("#button4").click(function() {
+  $("#button4").click(function(event) {
+    event.preventDefault();
     $("input:checkbox[name=id-tags4]:checked").each(function() {
       const checkedtags = $(this).val();
       $("#result0-summary").append(checkedtags);
