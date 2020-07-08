@@ -10,7 +10,7 @@ function displayMovieResults(response) {
     for (let i = 0; i < 5; i++) {
       $("#title"+i).text(response.results[i].title);
       if (response.results[i].poster_path){
-        $("#result"+i+" .image").html(`<img src=https://image.tmdb.org/t/p/w500${response.results[i].poster_path} >`)
+        $("#result"+i+" .image").html(`<img src=https://image.tmdb.org/t/p/w500${response.results[i].poster_path} >`);
       } 
       $(".result"+i+"-summary").html(`Release date: ${response.results[i].release_date}<br>`);
       $(".result"+i+"-summary").html(response.results[i].overview);
@@ -21,7 +21,7 @@ function displayMovieResults(response) {
     for (let i = 0; i < response.results.length; i++){
       $("#title"+i).text(response.results[i].title);
       if (response.results[i].poster_path){
-        $("#result"+i+" .image").html(`<img src=https://image.tmdb.org/t/p/w500${response.results[i].poster_path} >`)
+        $("#result"+i+" .image").html(`<img src=https://image.tmdb.org/t/p/w500${response.results[i].poster_path} >`);
       } 
       $(".result"+i+"-summary").html(`Release date: ${response.results[i].release_date}<br>`);
       $(".result"+i+"-summary").html(response.results[i].overview);
@@ -75,74 +75,67 @@ $(document).ready(function(){
   });
 });
 
-  (async() => {
-    const response = await srch.searchMovie();
-    displayResults(response);
 
-  })();
+$("#add-to-list0").click(function(event) {
+  event.preventDefault();
+  console.log();
 
-
-  $("#add-to-list0").click(function(event) {
-    event.preventDefault();
-    console.log();
-
-  });
-  $("#add-to-list1").click(function() {
+});
+$("#add-to-list1").click(function() {
     
-  });
-  $("#add-to-list2").click(function() {
+});
+$("#add-to-list2").click(function() {
     
-  });
-  $("#add-to-list3").click(function() {
+});
+$("#add-to-list3").click(function() {
     
-  });
-  $("#add-to-list4").click(function() {
+});
+$("#add-to-list4").click(function() {
     
+});
+
+
+
+
+$("#button0").click(function(event) {
+  event.preventDefault();
+
+  $("input:checkbox[name=id-tags0]:checked").each(function() {
+    const checkedtags = $(this).val();
+    $(".result0-summary").append(`<br>${checkedtags} `);
   });
-
-
-
-
-  $("#button0").click(function(event) {
-    event.preventDefault();
-
-    $("input:checkbox[name=id-tags0]:checked").each(function() {
-      const checkedtags = $(this).val();
-      $("#result0-summary").append(checkedtags);
-    });
-  });
+});
     
-  $("#button1").click(function(event) {
-    event.preventDefault();
-    $("input:checkbox[name=id-tags1]:checked").each(function() {
-      const checkedtags = $(this).val();
-      $("#result0-summary").append(checkedtags);
-      
-    });
+$("#button1").click(function(event) {
+  event.preventDefault();
+  $("input:checkbox[name=id-tags1]:checked").each(function() {
+    const checkedtags = $(this).val();
+    $(".result1-summary").append(`<br>${checkedtags} `);
   });
+});
 
-  $("#button2").click(function(event) {
-    event.preventDefault();
-    $("input:checkbox[name=id-tags2]:checked").each(function() {
-      const checkedtags = $(this).val();
-      $("#result0-summary").append(checkedtags);
-    });
+$("#button2").click(function(event) {
+  event.preventDefault();
+  $("input:checkbox[name=id-tags2]:checked").each(function() {
+    const checkedtags = $(this).val();
+    $(".result2-summary").append(`<br>${checkedtags} `);
   });
+});
 
-  $("#button3").click(function(event) {
-    event.preventDefault();
-    $("input:checkbox[name=id-tags3]:checked").each(function() {
-      const checkedtags = $(this).val();
-      $("#result0-summary").append(checkedtags);
-    });
+$("#button3").click(function(event) {
+  event.preventDefault();
+  $("input:checkbox[name=id-tags3]:checked").each(function() {
+    const checkedtags = $(this).val();
+    $(".result3-summary").append(`<br>${checkedtags} `);
   });
+});
 
-  $("#button4").click(function(event) {
-    event.preventDefault();
-    $("input:checkbox[name=id-tags4]:checked").each(function() {
-      const checkedtags = $(this).val();
-      $("#result0-summary").append(checkedtags);
-    });
+$("#button4").click(function(event) {
+  event.preventDefault();
+  $("input:checkbox[name=id-tags4]:checked").each(function() {
+    const checkedtags = $(this).val();
+    $(".result4-summary").append(`<br>${checkedtags} `);
   });
+});
 
 
