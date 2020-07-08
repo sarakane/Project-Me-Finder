@@ -1,256 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Project Me Finder</title>
 </head>
+
 <body>
   <h1> Project Find Me</h1>
   <div class="container-fluid">
     <div class="row row-cols-3">
       <div class="col-sm">
         <div class="search-forms">
-        <form id="movie-search-form">
-          <label for="movie-search">Movie Title:</label>
-          <input id="movie-search" type="text" required>
-          <button id="movie-button" type="submit">Submit</button>
-        </form>
-        <br>
-        <form id="people-search-form">
-          <label for="people-search">Actor/Director: </label>
-          <input id="people-search" type="text" required>
-          <button id="people-button" type="submit">Submit</button>
-        </form>
+          <form id="movie-search-form">
+            <label for="movie-search">Movie Title:</label>
+            <input id="movie-search" type="text" required>
+            <button id="movie-button" type="submit">Submit</button>
+          </form>
+          <br>
+          <form id="people-search-form">
+            <label for="people-search">Actor/Director: </label>
+            <input id="people-search" type="text" required>
+            <button id="people-button" type="submit">Submit</button>
+          </form>
+        </div>
       </div>
-  </div><!--end of column-->
-  <div class="col-sm">
-  <div class="results">
-    <!--ACCORDIAN WRAPPER-->
-      <div class="accordion" id="result0">
-        <!--CARD ONE-->
-        <div class="card">
-          <!--header-->
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <div class="image">
-                </div>
-                <h2 id="title0"></h2>
-              </button>
-            </h2>
-          </div>
-          <!--body - connects to head id with aria-labelledby value -->
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#result0">
-            <div class="card-body">
-              <div class="result0-summary"> 
+      <!--end of column-->
+      <div class="col-sm">
+        <div class="results">
+          <!--ACCORDIAN WRAPPER-->
+          <div class="accordion" id="result0">
+            <!--CARD ONE-->
+            <div class="card">
+              <!--header-->
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <div class="image">
+                    </div>
+                    <h2 id="title0"></h2>
+                  </button>
+                </h2>
               </div>
-              <div class="tags">
-                <h5>Do you want to add a tag?</h5>
-                <form id="tag-form0">
-                  <input type="checkbox" name="id-tags0" value="bipoc"> BIPOC<br>
-                  <input type="checkbox" name="id-tags0" value="lesbian"> Lesbian<br>
-                  <input type="checkbox" name="id-tags0" value="gay"> Gay<br>
-                  <input type="checkbox" name="id-tags0" value="queer"> Queer<br>
-                  <input type="checkbox" name="id-tags0" value="apa"> Asian Pacific American<br>
-                  <input type="checkbox" name="id-tags0" value="latinx"> Latinx<br>
-                  <input type="checkbox" name="id-tags0" value="black"> Black<br>
-                  <input type="checkbox" name="id-tags0" value="indigeneous"> Indigeneous<br>
-                  <input type="checkbox" name="id-tags0" value="neurodivergent"> Neurodivergent<br>
-                  <input type="checkbox" name="id-tags0" value="asexual"> Asexual<br>
-                  <input type="checkbox" name="id-tags0" value="lgbtqia"> LGBTQIA<br>
-                  <input type="checkbox" name="id-tags0" value="mideastern"> Mid Eastern</br>
-                  <input type="checkbox" name="id-tags0" value="indian"> Indian<br>
+              <!--body - connects to head id with aria-labelledby value -->
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#result0">
+                <div class="card-body">
+                  <div class="result0-summary">
+                  </div>
+                  <div class="tags">
+                    <h5>Do you want to add a tag?</h5>
+                    <form id="tag-form0">
+                      <input type="checkbox" name="id-tags0" value="bipoc"> BIPOC<br>
+                      <input type="checkbox" name="id-tags0" value="lesbian"> Lesbian<br>
+                      <input type="checkbox" name="id-tags0" value="gay"> Gay<br>
+                      <input type="checkbox" name="id-tags0" value="queer"> Queer<br>
+                      <input type="checkbox" name="id-tags0" value="apa"> Asian Pacific American<br>
+                      <input type="checkbox" name="id-tags0" value="latinx"> Latinx<br>
+                      <input type="checkbox" name="id-tags0" value="black"> Black<br>
+                      <input type="checkbox" name="id-tags0" value="indigeneous"> Indigeneous<br>
+                      <input type="checkbox" name="id-tags0" value="neurodivergent"> Neurodivergent<br>
+                      <input type="checkbox" name="id-tags0" value="asexual"> Asexual<br>
+                      <input type="checkbox" name="id-tags0" value="lgbtqia"> LGBTQIA<br>
+                      <input type="checkbox" name="id-tags0" value="mideastern"> Mid Eastern</br>
+                      <input type="checkbox" name="id-tags0" value="indian"> Indian<br>
 
-                  <button type="click" class="btn btn-success" id="button0">Add Tags</button>
-                  <button type="click" class="btn btn-warning" id="add-to-list0">Add to List</button>
-                </form> <!--end of tag form-->
-              </div> <!--end of tag div-->
-            </div>
-          </div>
-        </div>
-      </div> <!-- end div for accordian --> 
-
-    <div class="accordion" id="result1">
-        <!--CARD TWO-->
-        <div class="card">
-          <!--header-->
-          <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-              <!--differences: add class collapsed, aria-expanded is false-->
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                <div class="image">
+                      <button type="click" class="btn btn-success" id="button0">Add Tags</button>
+                      <button type="click" class="btn btn-warning" id="add-to-list0">Add to List</button>
+                    </form>
+                    <!--end of tag form-->
+                  </div>
+                  <!--end of tag div-->
                 </div>
-                <h2 id="title1"></h2>
-              </button>
-            </h2>
-          </div>
-          <!--body-->
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#result1">
-            <div class="card-body">
-              <div class="result1-summary"> 
               </div>
-              <div class="tags">
-                <h5>Do you want to add a tag?</h5>
-                <div id="tag-form1">
-                  <input type="checkbox" name="id-tags1" value="bipoc"> BIPOC<br>
-                  <input type="checkbox" name="id-tags1" value="lesbian"> Lesbian<br>
-                  <input type="checkbox" name="id-tags1" value="gay"> Gay<br>
-                  <input type="checkbox" name="id-tags1" value="queer"> Queer<br>
-                  <input type="checkbox" name="id-tags1" value="apa"> Asian Pacific American<br>
-                  <input type="checkbox" name="id-tags1" value="latinx"> Latinx<br>
-                  <input type="checkbox" name="id-tags1" value="black"> Black<br>
-                  <input type="checkbox" name="id-tags1" value="indigeneous"> Indigeneous<br>
-                  <input type="checkbox" name="id-tags1" value="neurodivergent"> Neurodivergent<br>
-                  <input type="checkbox" name="id-tags1" value="asexual"> Asexual<br>
-                  <input type="checkbox" name="id-tags1" value="lgbtqia"> LGBTQIA<br>
-                  <input type="checkbox" name="id-tags1" value="mideastern"> Mid Eastern</br>
-                  <input type="checkbox" name="id-tags1" value="indian"> Indian<br>
-                  
-                  <button class="btn btn-success"  id="button1">Add Tag</button>
-                  <button type="click" class="btn btn-warning" id="add-to-list1">Add to List</button>
-                </div> <!--end of tag form-->
-              </div> <!--end of tag div-->
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="accordion" id="result2">
-        <!--CARD TWO-->
-        <div class="card">
-          <!--header-->
-          <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-              <!--differences: add class collapsed, aria-expanded is false-->
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                <div class="image">
-                </div>
-                <h2 id="title2"></h2>
-              </button>
-            </h2>
-          </div>
-          <!--body-->
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#result2">
-            <div class="result2-summary"> 
-            </div>
-            <div class="tags">
-              <h5>Do you want to add a tag?</h5>
-              <div id="tag-form2">
-                  <input type="checkbox" name="id-tags2" value="bipoc"> BIPOC<br>
-                  <input type="checkbox" name="id-tags2" value="lesbian"> Lesbian<br>
-                  <input type="checkbox" name="id-tags2" value="gay"> Gay<br>
-                  <input type="checkbox" name="id-tags2" value="queer"> Queer<br>
-                  <input type="checkbox" name="id-tags2" value="apa"> Asian Pacific American<br>
-                  <input type="checkbox" name="id-tags2" value="latinx"> Latinx<br>
-                  <input type="checkbox" name="id-tags2" value="black"> Black<br>
-                  <input type="checkbox" name="id-tags2" value="indigeneous"> Indigeneous<br>
-                  <input type="checkbox" name="id-tags2" value="neurodivergent"> Neurodivergent<br>
-                  <input type="checkbox" name="id-tags2" value="asexual"> Asexual<br>
-                  <input type="checkbox" name="id-tags2" value="lgbtqia"> LGBTQIA<br>
-                  <input type="checkbox" name="id-tags2" value="mideastern"> Mid Eastern</br>
-                  <input type="checkbox" name="id-tags2" value="indian"> Indian<br>
-                      
-                  <button class="btn btn-success"  id="button2">Add Tag</button>
-                  <button type="click" class="btn btn-warning" id="add-to-list2">Add to List</button>
-                </div> <!--end of tag form-->
-              </div> <!--end of tag div-->
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="accordion" id="result3">
-        <!--CARD TWO-->
-        <div class="card">
-          <!--header-->
-          <div class="card-header" id="headingThree">
-            <h2 class="mb-0">
-              <!--differences: add class collapsed, aria-expanded is false-->
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                <div class="image">
-                </div>
-                <h2 id="title3"></h2>
-              </button>
-            </h2>
-          </div>
-          <!--body-->
-          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#result3">
-            <div class="card-body">
-              <div class="result3-summary"> 
-              </div>
-              <div class="tags">
-                <h5>Do you want to add a tag?</h5>
-                <div id="tag-form3">
-                  <input type="checkbox" name="id-tags3" value="bipoc"> BIPOC<br>
-                  <input type="checkbox" name="id-tags3" value="lesbian"> Lesbian<br>
-                  <input type="checkbox" name="id-tags3" value="gay"> Gay<br>
-                  <input type="checkbox" name="id-tags3" value="queer"> Queer<br>
-                  <input type="checkbox" name="id-tags3" value="apa"> Asian Pacific American<br>
-                  <input type="checkbox" name="id-tags3" value="latinx"> Latinx<br>
-                  <input type="checkbox" name="id-tags3" value="black"> Black<br>
-                  <input type="checkbox" name="id-tags3" value="indigeneous"> Indigeneous<br>
-                  <input type="checkbox" name="id-tags3" value="neurodivergent"> Neurodivergent<br>
-                  <input type="checkbox" name="id-tags3" value="asexual"> Asexual<br>
-                  <input type="checkbox" name="id-tags3" value="lgbtqia"> LGBTQIA<br>
-                  <input type="checkbox" name="id-tags3" value="mideastern"> Mid Eastern</br>
-                  <input type="checkbox" name="id-tags3" value="indian"> Indian<br>
-                  <button class="btn btn-success" id="button3">Add Tag</button>
-                  <button type="click" class="btn btn-warning" id="add-to-list3">Add to List</button>
-                </div> <!--end of tag form-->
-              </div> <!--end of tag div-->
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="accordion" id="result4">
-        <!--CARD TWO-->
-        <div class="card">
-          <!--header-->
-          <div class="card-header" id="headingFour">
-            <h2 class="mb-0">
-              <!--differences: add class collapsed, aria-expanded is false-->
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                <div class="image">
-                </div>
-                <h2 id="title4"></h2>
-              </button>
-            </h2>
-          </div>
-          <!--body-->
-          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#result4">
-            <div class="card-body">
-              <div class="result4-summary"> 
-              </div>
-              <div class="tags">
-                <h5>Do you want to add a tag?</h5>
-                <div id="tag-form4">
-                  <input type="checkbox" name="id-tags4" value="bipoc"> BIPOC<br>
-                  <input type="checkbox" name="id-tags4" value="lesbian"> Lesbian<br>
-                  <input type="checkbox" name="id-tags4" value="gay"> Gay<br>
-                  <input type="checkbox" name="id-tags4" value="queer"> Queer<br>
-                  <input type="checkbox" name="id-tags4" value="apa"> Asian Pacific American<br>
-                  <input type="checkbox" name="id-tags4" value="latinx"> Latinx<br>
-                  <input type="checkbox" name="id-tags4" value="black"> Black<br>
-                  <input type="checkbox" name="id-tags4" value="indigeneous"> Indigeneous<br>
-                  <input type="checkbox" name="id-tags4" value="neurodivergent"> Neurodivergent<br>
-                  <input type="checkbox" name="id-tags4" value="asexual"> Asexual<br>
-                  <input type="checkbox" name="id-tags4" value="lgbtqia"> LGBTQIA<br>
-                  <input type="checkbox" name="id-tags4" value="mideastern"> Mid Eastern</br>
-                  <input type="checkbox" name="id-tags4" value="indian"> Indian<br>
+          </div> <!-- end div for accordian -->
 
-                  <button class="btn btn-success" id="button4">Add Tag</button>
-                  <button type="click" class="btn btn-warning" id="add-to-list4">Add to List</button>
+          <div class="accordion" id="result1">
+            <!--CARD TWO-->
+            <div class="card">
+              <!--header-->
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <!--differences: add class collapsed, aria-expanded is false-->
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <div class="image">
+                    </div>
+                    <h2 id="title1"></h2>
+                  </button>
+                </h2>
+              </div>
+              <!--body-->
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#result1">
+                <div class="card-body">
+                  <div class="result1-summary">
+                  </div>
+                  <div class="tags">
+                    <h5>Do you want to add a tag?</h5>
+                    <div id="tag-form1">
+                      <input type="checkbox" name="id-tags1" value="bipoc"> BIPOC<br>
+                      <input type="checkbox" name="id-tags1" value="lesbian"> Lesbian<br>
+                      <input type="checkbox" name="id-tags1" value="gay"> Gay<br>
+                      <input type="checkbox" name="id-tags1" value="queer"> Queer<br>
+                      <input type="checkbox" name="id-tags1" value="apa"> Asian Pacific American<br>
+                      <input type="checkbox" name="id-tags1" value="latinx"> Latinx<br>
+                      <input type="checkbox" name="id-tags1" value="black"> Black<br>
+                      <input type="checkbox" name="id-tags1" value="indigeneous"> Indigeneous<br>
+                      <input type="checkbox" name="id-tags1" value="neurodivergent"> Neurodivergent<br>
+                      <input type="checkbox" name="id-tags1" value="asexual"> Asexual<br>
+                      <input type="checkbox" name="id-tags1" value="lgbtqia"> LGBTQIA<br>
+                      <input type="checkbox" name="id-tags1" value="mideastern"> Mid Eastern</br>
+                      <input type="checkbox" name="id-tags1" value="indian"> Indian<br>
 
-                </div> <!--end of tag form-->
-              </div> <!--end of tag div-->
+                      <button class="btn btn-success" id="button1">Add Tag</button>
+                      <button type="click" class="btn btn-warning" id="add-to-list1">Add to List</button>
+                    </div>
+                    <!--end of tag form-->
+                  </div>
+                  <!--end of tag div-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion" id="result2">
+            <!--CARD TWO-->
+            <div class="card">
+              <!--header-->
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <!--differences: add class collapsed, aria-expanded is false-->
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="true" aria-controls="collapseThree">
+                    <div class="image">
+                    </div>
+                    <h2 id="title2"></h2>
+                  </button>
+                </h2>
+              </div>
+              <!--body-->
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#result2">
+                <div class="result2-summary">
+                </div>
+                <div class="tags">
+                  <h5>Do you want to add a tag?</h5>
+                  <div id="tag-form2">
+                    <input type="checkbox" name="id-tags2" value="bipoc"> BIPOC<br>
+                    <input type="checkbox" name="id-tags2" value="lesbian"> Lesbian<br>
+                    <input type="checkbox" name="id-tags2" value="gay"> Gay<br>
+                    <input type="checkbox" name="id-tags2" value="queer"> Queer<br>
+                    <input type="checkbox" name="id-tags2" value="apa"> Asian Pacific American<br>
+                    <input type="checkbox" name="id-tags2" value="latinx"> Latinx<br>
+                    <input type="checkbox" name="id-tags2" value="black"> Black<br>
+                    <input type="checkbox" name="id-tags2" value="indigeneous"> Indigeneous<br>
+                    <input type="checkbox" name="id-tags2" value="neurodivergent"> Neurodivergent<br>
+                    <input type="checkbox" name="id-tags2" value="asexual"> Asexual<br>
+                    <input type="checkbox" name="id-tags2" value="lgbtqia"> LGBTQIA<br>
+                    <input type="checkbox" name="id-tags2" value="mideastern"> Mid Eastern</br>
+                    <input type="checkbox" name="id-tags2" value="indian"> Indian<br>
+
+                    <button class="btn btn-success" id="button2">Add Tag</button>
+                    <button type="click" class="btn btn-warning" id="add-to-list2">Add to List</button>
+                  </div>
+                  <!--end of tag form-->
+                </div>
+                <!--end of tag div-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="result3">
+          <!--CARD TWO-->
+          <div class="card">
+            <!--header-->
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <!--differences: add class collapsed, aria-expanded is false-->
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour"
+                  aria-expanded="true" aria-controls="collapseFour">
+                  <div class="image">
+                  </div>
+                  <h2 id="title3"></h2>
+                </button>
+              </h2>
+            </div>
+            <!--body-->
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#result3">
+              <div class="card-body">
+                <div class="result3-summary">
+                </div>
+                <div class="tags">
+                  <h5>Do you want to add a tag?</h5>
+                  <div id="tag-form3">
+                    <input type="checkbox" name="id-tags3" value="bipoc"> BIPOC<br>
+                    <input type="checkbox" name="id-tags3" value="lesbian"> Lesbian<br>
+                    <input type="checkbox" name="id-tags3" value="gay"> Gay<br>
+                    <input type="checkbox" name="id-tags3" value="queer"> Queer<br>
+                    <input type="checkbox" name="id-tags3" value="apa"> Asian Pacific American<br>
+                    <input type="checkbox" name="id-tags3" value="latinx"> Latinx<br>
+                    <input type="checkbox" name="id-tags3" value="black"> Black<br>
+                    <input type="checkbox" name="id-tags3" value="indigeneous"> Indigeneous<br>
+                    <input type="checkbox" name="id-tags3" value="neurodivergent"> Neurodivergent<br>
+                    <input type="checkbox" name="id-tags3" value="asexual"> Asexual<br>
+                    <input type="checkbox" name="id-tags3" value="lgbtqia"> LGBTQIA<br>
+                    <input type="checkbox" name="id-tags3" value="mideastern"> Mid Eastern</br>
+                    <input type="checkbox" name="id-tags3" value="indian"> Indian<br>
+                    <button class="btn btn-success" id="button3">Add Tag</button>
+                    <button type="click" class="btn btn-warning" id="add-to-list3">Add to List</button>
+                  </div>
+                  <!--end of tag form-->
+                </div>
+                <!--end of tag div-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="result4">
+          <!--CARD TWO-->
+          <div class="card">
+            <!--header-->
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <!--differences: add class collapsed, aria-expanded is false-->
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive"
+                  aria-expanded="true" aria-controls="collapseFive">
+                  <div class="image">
+                  </div>
+                  <h2 id="title4"></h2>
+                </button>
+              </h2>
+            </div>
+            <!--body-->
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#result4">
+              <div class="card-body">
+                <div class="result4-summary">
+                </div>
+                <div class="tags">
+                  <h5>Do you want to add a tag?</h5>
+                  <div id="tag-form4">
+                    <input type="checkbox" name="id-tags4" value="bipoc"> BIPOC<br>
+                    <input type="checkbox" name="id-tags4" value="lesbian"> Lesbian<br>
+                    <input type="checkbox" name="id-tags4" value="gay"> Gay<br>
+                    <input type="checkbox" name="id-tags4" value="queer"> Queer<br>
+                    <input type="checkbox" name="id-tags4" value="apa"> Asian Pacific American<br>
+                    <input type="checkbox" name="id-tags4" value="latinx"> Latinx<br>
+                    <input type="checkbox" name="id-tags4" value="black"> Black<br>
+                    <input type="checkbox" name="id-tags4" value="indigeneous"> Indigeneous<br>
+                    <input type="checkbox" name="id-tags4" value="neurodivergent"> Neurodivergent<br>
+                    <input type="checkbox" name="id-tags4" value="asexual"> Asexual<br>
+                    <input type="checkbox" name="id-tags4" value="lgbtqia"> LGBTQIA<br>
+                    <input type="checkbox" name="id-tags4" value="mideastern"> Mid Eastern</br>
+                    <input type="checkbox" name="id-tags4" value="indian"> Indian<br>
+
+                    <button class="btn btn-success" id="button4">Add Tag</button>
+                    <button type="click" class="btn btn-warning" id="add-to-list4">Add to List</button>
+
+                  </div>
+                  <!--end of tag form-->
+                </div>
+                <!--end of tag div-->
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>  <!--end of results -->
-    </div><!--end of col tag-->
+      <!--end of results -->
+    </div>
+    <!--end of col tag-->
     <div class="col-sm" id=tags></div>
-    </div> <!--end row for results-->
+  </div>
+  <!--end row for results-->
   </div> <!-- end div for container -->
 </body>
+
 </html>
