@@ -40,6 +40,8 @@
                   <div class="image">
                   </div>
                   <h2 id="title0"></h2>
+                  <button type="click" class="btn btn-warning" id="add-to-list0">Add to List</button>
+
                 </button>
               </h2>
             </div>
@@ -48,6 +50,7 @@
               <div class="card-body">
                 <div class="result0-summary">
                 </div>
+                <div id="display-tag0"></div>
                 <div class="tags">
                   <h5>Do you want to add a tag?</h5>
                   <form id="tag-form0">
@@ -77,9 +80,7 @@
                     <label for="id-tags0l"> Neurodivergent</label><br>
                     <input type="checkbox" id="id-tags0m" name="id-tags0" value="queer"> 
                     <label for="id-tags0m"> Queer</label><br>
-
                     <button type="click" class="btn btn-success" id="button0">Add Tags</button>
-                    <button type="click" class="btn btn-warning" id="add-to-list0">Add to List</button>
                   </form>
                   <!--end of tag form-->
                 </div>
@@ -113,6 +114,7 @@
               <div class="card-body">
                 <div class="result1-summary">
                 </div>
+                <div id="display-tag1"></div>
                 <div class="tags">
                   <h5>Do you want to add a tag?</h5>
                   <div id="tag-form1">
@@ -176,6 +178,7 @@
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#result2">
               <div class="result2-summary">
               </div>
+              <div id="display-tag2"></div>
               <div class="tags">
                 <h5>Do you want to add a tag?</h5>
                 <div id="tag-form2">
@@ -238,6 +241,7 @@
               <div class="card-body">
                 <div class="result3-summary">
                 </div>
+                <div id="display-tag3"></div>
                 <div class="tags">
                   <h5>Do you want to add a tag?</h5>
                     <form id="tag-form3">
@@ -301,6 +305,7 @@
               <div class="card-body">
                 <div class="result4-summary">
                 </div>
+                <div id="display-tag4"></div>
                 <div class="tags">
                   <h5>Do you want to add a tag?</h5>
                   <div id="tag-form4">
@@ -348,7 +353,25 @@
         <!--end of accordion div-->
         </div>
         <!--end of results and col-->
-        <div class="col-sm"></div>
+        <div class="col-sm">
+          <div class="accordion" id="favoriteBox">
+            <div class="card">
+              <div class="card-header" id="headingFavorite">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFavorite" aria-expanded="true" aria-controls="collapseFavorite">
+                    Favorite Movie List:
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFavorite" class="collapse" aria-labelledby="headingFavorite" data-parent="#favoriteBox">
+                <div class="card-body">
+                  <ul class="displayFavorite">
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
     <!--end of row div-->
   </div>
