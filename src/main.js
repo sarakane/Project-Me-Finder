@@ -75,5 +75,68 @@ $(document).ready(function(){
   });
 });
 
+  (async() => {
+    const response = await srch.searchMovie("Avengers");
+    displayResults(response);
 
-// <li> Here is your movie: ${movie} The official title is: ${response.results[0].title} ${response.results[0].overview}<br> <img src=https://image.tmdb.org/t/p/w500${response.results[0].poster_path} ></li>`);
+  })();
+
+
+  $("#add-to-list0").click(function(event) {
+    event.preventDefault();
+    console.log();
+
+  });
+  $("#add-to-list1").click(function() {
+    
+  });
+  $("#add-to-list2").click(function() {
+    
+  });
+  $("#add-to-list3").click(function() {
+    
+  });
+  $("#add-to-list4").click(function() {
+    
+  });
+
+
+
+
+  $("#button0").click(function() {
+    $("input:checkbox[name=id-tags0]:checked").each(function() {
+      const checkedtags = $(this).val();
+      $("#result0-summary").append(checkedtags);
+    });
+  });
+    
+  $("#button1").click(function() {
+    $("input:checkbox[name=id-tags1]:checked").each(function() {
+      const checkedtags = $(this).val();
+      $("#result0-summary").append(checkedtags);
+      
+    });
+  });
+
+  $("#button2").click(function() {
+    $("input:checkbox[name=id-tags2]:checked").each(function() {
+      const checkedtags = $(this).val();
+      $("#result0-summary").append(checkedtags);
+    });
+  });
+
+  $("#button3").click(function() {
+    $("input:checkbox[name=id-tags3]:checked").each(function() {
+      const checkedtags = $(this).val();
+      $("#result0-summary").append(checkedtags);
+    });
+  });
+
+  $("#button4").click(function() {
+    $("input:checkbox[name=id-tags4]:checked").each(function() {
+      const checkedtags = $(this).val();
+      $("#result0-summary").append(checkedtags);
+    });
+  });
+
+
