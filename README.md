@@ -86,7 +86,7 @@ ADD DESCRIPTION
 
 ## Support and contact details
 
-XXXX  
+If you have any questions or comments, please reach out via email at mariel.hamson@gmail.com. 
 
 ## Technologies Used
 
@@ -107,4 +107,4 @@ XXXX
 
 *This site is licensed under the MIT license.*
 
-Copyright (c) 2020 **_Authors_**
+Copyright (c) 2020 **_Mariel Hamson, Jason Khan, Sara Kane, Chris Yoon & Brittany Lindgren_**
