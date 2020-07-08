@@ -115,9 +115,10 @@ $(document).ready(function(){
 
 $("#button0").click(function(event) {
   event.preventDefault();
+  $("#display-tag0").empty();
   $("input:checkbox[name=id-tags0]:checked").each(function() {
     const checkedtags = $(this).val();
-    $("#display-tag0").text(`<br>${checkedtags} `);
+    $("#display-tag0").append(`<br>${checkedtags} `);
   });
 });
     
@@ -125,7 +126,7 @@ $("#button1").click(function(event) {
   event.preventDefault();
   $("input:checkbox[name=id-tags1]:checked").each(function() {
     const checkedtags = $(this).val();
-    $("#display-tag1").text(`<br>${checkedtags} `);
+    $("#display-tag1").append(`<br>${checkedtags} `);
   });
 });
 
@@ -133,7 +134,7 @@ $("#button2").click(function(event) {
   event.preventDefault();
   $("input:checkbox[name=id-tags2]:checked").each(function() {
     const checkedtags = $(this).val();
-    $("#display-tag2").text(`<br>${checkedtags} `);
+    $("#display-tag2").append(`<br>${checkedtags} `);
   });
 });
 
@@ -149,7 +150,7 @@ $("#button4").click(function(event) {
   event.preventDefault();
   $("input:checkbox[name=id-tags4]:checked").each(function() {
     const checkedtags = $(this).val();
-    $("#display-tag4").text(`<br>${checkedtags} `);
+    $("#display-tag4").append(`<br>${checkedtags} `);
   });
 });
 
