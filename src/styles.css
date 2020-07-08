@@ -1,3 +1,15 @@
+.container-fluid {
+  position: relative;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
 #result0, #result1, #result2, #result3, #result4 {
   display:none;
 }
