@@ -14,8 +14,8 @@ function displayMovieResults(response) {
       } else {
         $("#result"+i+" .image").empty();
       }
-      $(".result"+i+"-summary").html(`Release date: ${response.results[i].release_date}<br>`);
       $(".result"+i+"-summary").html(response.results[i].overview);
+      $(".result"+i+"-summary").append(` <br> <br> Release date: ${response.results[i].release_date}<br><br>`);
       $("#result"+i).show();
 
     }
@@ -27,8 +27,8 @@ function displayMovieResults(response) {
       } else {
         $("#result"+i+" .image").empty();
       }
-      $(".result"+i+"-summary").html(`Release date: ${response.results[i].release_date}<br>`);
       $(".result"+i+"-summary").html(response.results[i].overview);
+      $(".result"+i+"-summary").append(` <br> <br> Release date: ${response.results[i].release_date}<br><br>`);
       $("#result"+i).show();
     }
   }
@@ -39,16 +39,16 @@ function displayPeopleResults(response) {
     for (let i = 0; i < 5; i++) {
       $("#title"+i).text(response.results[0].known_for[i].title);
       $("#result"+i+" .image").html(`<img src=https://image.tmdb.org/t/p/w500${response.results[0].known_for[i].poster_path} >`);
-      $(".result"+i+"-summary").html(`Release date: ${response.results[0].release_date}<br>`);
-      $(".result"+i+"-summary").html(response.results[0].overview);
+      $(".result"+i+"-summary").html(response.results[0].known_for[i].overview);
+      $(".result"+i+"-summary").append(` <br> <br> Release date: ${response.results[0].known_for[i].release_date}<br><br>`);
       $("#result"+i).show();
     }
   } else {
     for (let i = 0; i < response.results[0].known_for.length; i++){
       $("#title"+i).text(response.results[0].known_for[i].title);
       $("#result"+i+" .image").html(`<img src=https://image.tmdb.org/t/p/w500${response.results[0].known_for[i].poster_path} >`);
-      $(".result"+i+"-summary").html(`Release date: ${response.results[0].known_for[i].release_date}<br>`);
       $(".result"+i+"-summary").html(response.results[0].known_for[i].overview);
+      $(".result"+i+"-summary").append(` <br> <br> Release date: ${response.results[0].known_for[i].release_date}<br><br>`);
       $("#result"+i).show();
     }
   }
