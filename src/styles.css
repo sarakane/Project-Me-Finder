@@ -1,9 +1,6 @@
 body {
-  background-image: url(./../assets/images/background.jpg);
-  background-repeat: no-repeat;
+  background: url(./../assets/images/background.jpg) no-repeat center center fixed;
   background-size: cover;
-  position: center;
-  max-width: 100%;
 }
 
 .container-fluid {
@@ -25,8 +22,11 @@ footer {
 }
 
 h1 {
-  padding: 20px;
+  padding-top: 50px;
+  padding-left: 20px;
   color: #FFF;
+  font-size: 40px;
+  text-shadow: 3px 3px #000;
 }
 
 h2, #favorites-button {
@@ -50,8 +50,6 @@ ul li {
 .card {
   display: grid;
 }
-
-/* Card class is already labeled with display grid. Will just need to add more property:values to specify that we want them to form columns and to auto update columns depending on screen size - see css grid documentation  */
 
 img {
   width: 200px;
