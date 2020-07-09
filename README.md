@@ -39,11 +39,11 @@ The program allows users to find specific movies and add them to a favorites lis
 | Steps | Example |
 | -------- | ----- |
 | To get an API key for the Project Me Finder website, go to the [The Movie Database](https://www.themoviedb.org/) website.  | Go to the tMDB site |
-|  Create an account with TMDb  |  ![Join TMDb](assets/images/readme/step1.png)  |
-|  Enter your information to sign up for a free account  |  ![Sign up for a free account](assets/images/readme/step2.png)  |
-|  You will need to verify your email address and then log into the site.  |  ![Click settings under your profile tag](assets/images/readme/step3.png)   |
-|  Access the API settings  |  ![Click API on settings sidebar](assets/images/readme/step4.png)   |
-|  Access the API key  |  ![Scroll to "API Key"](assets/images/readme/step5.png)   |
+|  Create an account with TMDb  |  Join TMDb   |
+|  Enter your information to sign up for a free account  |  Sign up for a free account  |
+|  You will need to verify your email address and then log into the site.  |  Click settings under your profile tag   |
+|  Access the API settings  |  Click API on settings sidebar  |
+|  Access the API key  |  Scroll to "API Key"   |
 |  Your API key is unique to you. DO NOT SHARE YOUR KEY. Below are the instructions for _`Add .env file`_ which will walk you through setting up a .env file. You will store your key inside of that file to keep it private.  |  see _`Add .env file`_ below  |  
 
 
