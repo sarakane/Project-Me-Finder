@@ -1,5 +1,19 @@
+body {
+  background-image: url(./../assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: center;
+  max-width: 100%;
+}
+
 .container-fluid {
   position: relative;
+  background: rgba(255, 255, 255, .5);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, .5);
+  padding: 50px;
+  margin-top: 50px;
+  border-radius: 3px;
+  min-height: 100vh;
 }
 
 footer {
@@ -12,6 +26,11 @@ footer {
 
 h1 {
   padding: 20px;
+  color: #FFF;
+}
+
+h2, #favorites-button {
+  color: darkslategrey;
 }
 
 ul li {
@@ -56,5 +75,22 @@ select {
   display: inline;
   background-color: darkslategrey;
   color: white;
+}
+
+
+.btn-link:link, h2:link {
+  color: darkslategrey;
+}
+
+.btn-link:visited, h2:visited {
+  color: palevioletred;
+}
+
+.btn-link:hover, h2:hover {
+  color: darkslategrey;
+}
+
+.btn-link:active, h2:active {
+  color: orangered;
 }
 

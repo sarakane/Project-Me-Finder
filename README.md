@@ -6,7 +6,7 @@
 
 ## Description
 
-ADD DESCRIPTION
+The program allows users to find specific movies and add them to a favorites list. The user can search by Movie Title, Actor, or Director and see most popular movie results. The user can then add certain demographic or identity tags to the movie. The intent of this project is to create a program that will allow users to see positive representations of their own or others' identities in media. This is particularly important for underrepresented groups as studies show that positive media representation is a critical factor in equity and social justice for marginalized communities.  Future stretch goals include: the ability to rate the representation as more or less positive, rate the movie overall, create a forum to discuss representations in pop culture, and to create/store tagging metadata in an API database that others can access to get movie recommendations. 
 
 ## Setup/Installation Requirements
 
@@ -65,11 +65,11 @@ ADD DESCRIPTION
 
 | Behavior | Input | Output |  Completed(Y/N?)  | 
 | -------- | ----- | ------ | -------- |
-|   Program will search for result based on paramater and return any matching result   |   title   |   specific movie by title   |    N    |
-|   Program will accept a variety of parameters and return any matching result    |   actor, director, title, genre    |     specific movies related to parameter selection    |    N   |
-| Program will add predefined tags to movies | user selects a predefined tag  | tag added to movie | N |
-| Program will create a favorites list that the user can name/title themselves |   User names list `Favorite Directors` |   Charles Burnett  |   N   |
-| Program will add a movie to a favorites list | User selects Add `Killer of Sheep` | Favorite Directors {Director: Charles Burnett, Movie Titles: ["Killer of Sheep"]} |   N   |
+|   Program will search for result based on paramater and return any matching result   |   title   |   specific movie by title   |    Y    |
+|   Program will accept a variety of parameters and return any matching result    |   actor, director, title    |     specific movies related to parameter selection    |    Y  |
+| Program will add predefined tags to movies | user selects a predefined tag  | tag added to movie | Y |
+| Program will create a favorites list |   Favorite Movies |   Waterworld  |   Y  |
+| Program will add a movie to a favorites list | User selects Add `Killer of Sheep` | Favorite Movies: ["Killer of Sheep"]} |   Y   |
 
 ## Specifications Stretch Goals
 | Behavior | Input | Output |  Completed(Y/N?)  | 
